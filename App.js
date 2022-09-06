@@ -6,7 +6,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <ImageBackground 
-        source={require('./assets/images/ModelX.jpeg')}
+        source={require('./assets/images/ModelS.jpeg')}
         style={styles.image} 
       />
       <View style={styles.carContainer}>

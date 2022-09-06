@@ -1,11 +1,19 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, ImageBackground} from 'react-native';
+import styles from './styles';
 
 const CarItem = (props) => {
   return (
-    <View>
-      <Text>Text here</Text>
-    </View>
+    <View style={styles.carContainer}>
+      <ImageBackground 
+        source={require('../../assets/images/ModelS.jpeg')}
+        style={styles.image} 
+      />
+        <View style={styles.titles}>
+          <Text style={styles.title}>Model S</Text>
+          <Text style={styles.subtitle}>Starting at $56,764</Text>
+        </View>
+      </View>
   );
 };
 

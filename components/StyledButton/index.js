@@ -5,10 +5,11 @@ import styles from './styles';
 const StyledButton = (props) => {
     const type = props.type;
     console.warn(type);
+    const backgroundColor = type === 'primary' ? 'black' : 'white';
   return (
     <View style={styles.container}>
       <Pressable
-        style={styles.button}
+        style={[styles.button, {backgroundColor: backgroundColor}]}
         onPress={() => {
         console.warn('Hey there')
         }}
